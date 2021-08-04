@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  line-height: normal;
+}
+
+#header-space {
+  display: flex;
+  height: 150px;
+  background-color: rgb(245, 238, 244);
+  justify-content: center;
+}
+#logo_space {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 150px;
+  width: 1024px;
+}
+#header-logo > img {
+  width: 80px;
+  height: 80px;
+}
+#header-text {
+  width: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+#body {
+  height: 100vh;
+  width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 24;
+  background-color: blueviolet;
+}
+#body-map {
+  display: flex;
+  background-color: cadetblue;
+  width: 1024px;
+  height: 1024px;
+  flex-direction: column;
+}
+#map {
+  width: 600px;
+  height: 600px;
+  background-color: chocolate;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+#map > img {
+  width: 600px;
+  height: 600px;
+}
+#interaction {
+  display: flex;
+  width: 600px;
+  flex-direction: row;
+  background-color: coral;
+  margin: 0px auto;
+  margin-top: 5px;
+  justify-content: flex-end;
+}
+#good_button {
+  width: 90px;
+  background-color: cornflowerblue;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid gray;
+}
+#share_button {
+  width: 90px;
+  background-color: cornflowerblue;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid gray;
+}
+#social_space {
+  display: flex;
+  width: 600px;
+  height: 130px;
+  flex-direction: row;
+  background-color: coral;
+  margin: 0px auto;
+  margin-top: 5px;
+}
+#footer {
+  background-color: brown;
+  height: 200px;
+}
