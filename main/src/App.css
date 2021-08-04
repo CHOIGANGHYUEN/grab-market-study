@@ -3,19 +3,25 @@
   padding: 0px;
   line-height: normal;
 }
-
+body {
+  background-color: rgb(240, 235, 240);
+}
 #header-space {
   display: flex;
-  height: 150px;
-  background-color: rgb(245, 238, 244);
+  height: 80px;
+  border-bottom: 1px solid rgb(122, 110, 122);
+  background: white;
+  align-items: center;
+  top: 0;
   justify-content: center;
+  position: sticky;
 }
 #logo_space {
   display: flex;
   justify-content: left;
   align-items: center;
-  height: 150px;
-  width: 1024px;
+  height: 80px;
+  width: 600px;
 }
 #header-logo > img {
   width: 80px;
@@ -29,62 +35,98 @@
 }
 #body {
   height: 100vh;
-  width: 1024px;
   margin: 0 auto;
-  padding-bottom: 24;
-  background-color: blueviolet;
+  padding-top: 30px;
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+
+  background-color: rgb(240, 235, 240);
 }
-#body-map {
+#post {
   display: flex;
-  background-color: cadetblue;
-  width: 1024px;
-  height: 1024px;
+  width: 600px;
+  height: 850px;
+  border: 1px solid rgb(3, 0, 3);
+
+  margin: 0px auto;
   flex-direction: column;
 }
+#author-space {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background: white;
+
+  align-items: center;
+  font-size: 30px;
+}
+#author-space > img {
+  width: 50px;
+  height: 50px;
+}
+
 #map {
   width: 600px;
   height: 600px;
-  background-color: chocolate;
   margin: 0px auto;
-  margin-top: 50px;
 }
 #map > img {
-  width: 600px;
-  height: 600px;
+  width: 599px;
+  height: 599px;
 }
 #interaction {
   display: flex;
-  width: 600px;
+  width: 598.5px;
   flex-direction: row;
-  background-color: coral;
-  margin: 0px auto;
-  margin-top: 5px;
   justify-content: flex-end;
 }
-#good_button {
-  width: 90px;
-  background-color: cornflowerblue;
+
+#good_button > button {
+  width: 50px;
+  height: 20px;
   margin-right: 5px;
   margin-left: 5px;
-  border: 1px solid gray;
+  font-size: 8px;
+  color: rgb(211, 171, 211);
 }
-#share_button {
-  width: 90px;
-  background-color: cornflowerblue;
-  margin-right: 5px;
-  margin-left: 5px;
-  border: 1px solid gray;
+
+#share_button > button {
+  width: 50px;
+  height: 20px;
+  margin-right: 10px;
+  font-size: 8px;
 }
 #social_space {
-  display: flex;
-  width: 600px;
+  background-color: white;
+
+  width: 598px;
   height: 130px;
-  flex-direction: row;
-  background-color: coral;
   margin: 0px auto;
   margin-top: 5px;
 }
+
+#read_comment {
+  height: 120px;
+  background-color: khaki;
+}
+
+#Form {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 32px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.Button {
+  margin-left: 100px;
+}
+.label {
+}
+#Input_Comment {
+  width: 400px;
+}
 #footer {
-  background-color: brown;
   height: 200px;
 }
