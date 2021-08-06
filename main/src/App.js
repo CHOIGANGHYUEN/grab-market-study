@@ -69,7 +69,7 @@ function App() {
         </div>
         <div id="btn_post_upload">
           <Button type="primary" size="small">
-            +
+            +ㅂ
           </Button>
         </div>
       </div>
