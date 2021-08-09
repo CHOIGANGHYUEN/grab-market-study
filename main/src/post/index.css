@@ -1,0 +1,116 @@
+#post {
+  display: flex;
+  width: 600px;
+  height: 850px;
+  border: 1px solid rgb(3, 0, 3);
+
+  margin: 0px auto;
+  flex-direction: column;
+}
+#author-space {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background: white;
+
+  align-items: center;
+  font-size: 30px;
+}
+#author-space > img {
+  width: 50px;
+  height: 50px;
+}
+
+.map {
+  width: 600px;
+  height: 600px;
+  margin: 0px auto;
+}
+#img_list {
+  width: 100vw;
+  white-space: nowrap;
+}
+#img_list > #img {
+  width: 80vw;
+  margin: 0 10vw 0 10vw;
+  display: inline-blockd;
+}
+.imgUrl > img {
+  width: 599px;
+  height: 599px;
+}
+#prevImg {
+  width: 50px;
+  height: 20px;
+  font-size: 8px;
+}
+#nextImg {
+  width: 50px;
+  height: 20px;
+  font-size: 8px;
+}
+#interaction {
+  display: flex;
+  width: 598.5px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#good_button > button {
+  width: 50px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 8px;
+  color: rgb(211, 171, 211);
+}
+
+#share_button > button {
+  width: 50px;
+  height: 20px;
+  margin-right: 10px;
+  font-size: 8px;
+}
+#goodCount {
+  font-size: 8px;
+  margin-right: 8px;
+}
+#social_space {
+  background-color: white;
+
+  width: 598px;
+  height: 130px;
+  margin: 0px auto;
+  margin-top: 5px;
+}
+
+#read_comment {
+  height: 120px;
+  background-color: khaki;
+}
+#comment {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 1px;
+  align-items: center;
+  margin-top: 1px;
+}
+#profile_img > img {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+#profile_name {
+  width: 50px;
+}
+#profile_name > #name {
+  font-size: 8px;
+}
+
+.Input_Commponent > #Input_Comment {
+  width: 450px;
+}
+#upload_comment_btn {
+  margin-left: 30px;
+}
