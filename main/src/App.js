@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import GetImg from "./GetImg";
 import InputCommponent from "./input_comment_Box";
 import InteractionComponent from "./interactionComponent";
+import MyComponent from "./Comment";
 
 function App() {
   const onFinish = (values) => {
@@ -69,7 +70,7 @@ function App() {
         </div>
         <div id="btn_post_upload">
           <Button type="primary" size="small">
-            +ㅂ
+            +
           </Button>
         </div>
       </div>
@@ -98,7 +99,8 @@ function App() {
                 <div id="profile_name">
                   <span id="name">{post[0].commenter_name}</span>
                 </div>
-                <InputCommponent id="Input_Commponent"></InputCommponent>
+                <MyComponent />
+                {/* <InputCommponent id="Input_Commponent"></InputCommponent> */}
               </div>
             </div>
           </div>
