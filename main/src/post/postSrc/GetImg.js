@@ -3,13 +3,13 @@ import "antd/dist/antd.css";
 import { Button } from "antd";
 let imgs = [
   {
-    imgUrl: "images/쩡게이.jpg",
+    imgUrl: "images/김진혁이준사진.jpg",
+  },
+  {
+    imgUrl: "images/진혁이를위한브런치.jpg",
   },
   {
     imgUrl: "images/지도캡쳐본.png",
-  },
-  {
-    imgUrl: "images/이쁜누나.png",
   },
 ];
 function GetImg() {

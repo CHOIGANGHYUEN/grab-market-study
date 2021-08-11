@@ -5,12 +5,14 @@ import Comment from "./postSrc/Comment";
 import React from "react";
 import GetImg from "./postSrc/GetImg";
 import InteractionComponent from "./postSrc/interactionComponent";
+import { getMyName, getMyProfileImg, ChangeUser } from "./postSrc/User";
+
 let post = [
   {
     author_imgUrl: "logo192.png",
     author_name: "1page",
     map_imgUrl: "images/지도캡쳐본.png",
-    post: "날씨 맑음",
+    post: "김진혁이 준 사진",
   },
   {
     author_imgUrl: "logo192.png",
@@ -24,6 +26,7 @@ function PostComponent() {
   return (
     <div id="post">
       <div id="author-space">
+        <ChangeUser></ChangeUser>
         <img src={post[0].author_imgUrl}></img>
         <div id="author-profile">{post[0].author_name}</div>
       </div>
