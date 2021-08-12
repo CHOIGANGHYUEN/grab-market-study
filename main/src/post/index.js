@@ -1,11 +1,11 @@
 import "antd/dist/antd.css";
-import "./index.css";
+import "post/index.css";
 import { Carousel } from "antd";
-import Comment from "./postSrc/Comment";
+import Comment from "post/postSrc/Comment";
 import React from "react";
-import GetImg from "./postSrc/GetImg";
-import InteractionComponent from "./postSrc/interactionComponent";
-import { getMyName, getMyProfileImg, ChangeUser } from "./postSrc/User";
+import GetImg from "post/postSrc/GetImg";
+import InteractionComponent from "post/postSrc/interactionComponent";
+import { getMyName, getMyProfileImg, ChangeUser } from "users/index";
 
 let post = [
   {
@@ -24,23 +24,25 @@ let post = [
 ];
 function PostComponent() {
   return (
-    <div id="post">
-      <div id="author-space">
-        <ChangeUser></ChangeUser>
-        <img src={post[0].author_imgUrl}></img>
-        <div id="author-profile">{post[0].author_name}</div>
-      </div>
-      <div className="map">
-        <Carousel>
-          <GetImg id="get_Img"></GetImg>
-        </Carousel>
-      </div>
-      <div id="interaction">
-        <InteractionComponent></InteractionComponent>
-      </div>
-      <div id="social_space">
-        <div id="main-comment">{post[0].post}</div>
-        <Comment></Comment>
+    <div>
+      <div id="post">
+        <div id="author-space">
+          <ChangeUser></ChangeUser>
+          <img src={post[0].author_imgUrl}></img>
+          <div id="author-profile">{post[0].author_name}</div>
+        </div>
+        <div className="map">
+          <Carousel>
+            <GetImg id="get_Img"></GetImg>
+          </Carousel>
+        </div>
+        <div id="interaction">
+          <InteractionComponent></InteractionComponent>
+        </div>
+        <div id="social_space">
+          <div id="main-comment">{post[0].post}</div>
+          <Comment></Comment>
+        </div>
       </div>
     </div>
   );

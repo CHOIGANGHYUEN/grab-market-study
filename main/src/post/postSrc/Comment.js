@@ -6,7 +6,7 @@ import {
   getOtherName,
   getOtherProfileImg,
   getId,
-} from "./User";
+} from "users/index";
 
 class Comment extends React.Component {
   constructor() {

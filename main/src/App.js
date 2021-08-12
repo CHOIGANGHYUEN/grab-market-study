@@ -1,6 +1,7 @@
-import "./App.css";
+import "App.css";
 import "antd/dist/antd.css";
-import PostComponent from "./post";
+import PostComponent from "post";
+import Main from "main";
 import { Button } from "antd";
 import React from "react";
 
@@ -28,7 +29,7 @@ function App() {
         </div>
       </div>
       <div id="body">
-        <PostComponent></PostComponent>
+        <Main></Main>
       </div>
       <div id="footer">footer</div>
     </div>

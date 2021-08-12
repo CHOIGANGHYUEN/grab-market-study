@@ -6,6 +6,9 @@ function InteractionComponent() {
   const click_goodBTN = () => {
     setGood(good + 1);
   };
+  const copyLink = () => {
+    alert("localhost:3000/");
+  };
   return (
     <div id="interaction">
       <div id="good_button">
@@ -15,7 +18,9 @@ function InteractionComponent() {
         <span id="goodCount">{good}</span>
       </div>
       <div id="share_button">
-        <Button size="small">공유</Button>
+        <Button size="small" onClick={copyLink}>
+          공유
+        </Button>
       </div>
     </div>
   );
